@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" type="image/png" href="images/skillam logo.png">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- navbar  -->
+    <div id="navbar-container"></div>
+
+    <!-- hero section  -->
+    <section class="hero-gallery">
+        <h1 class="hero-gallery-title-gallery">Discover the <span>Skillam!</span> Experience</h1>
+        <p class="hero-gallery-subtitle-gallery">From classrooms to success stories - a visual journey of our students.</p>
+    </section>
+
+    <!-- gallery section  -->
+    <section class="gallery-section">
+        <div class="gallery-container">
+            <!-- Left Side: Category List -->
+            <aside class="gallery-categories">
+                <h2>Categories</h2>
+                <ul>
+                    <li data-filter="all" class="active">All</li>
+                    <li data-filter="english">English Language</li>
+                    <li data-filter="aviation">Aviation Training</li>
+                    <li data-filter="computer">Computer Training</li>
+                    <li data-filter="english">Student Life</li>
+                    <li data-filter="aviation">Infrastructure</li>
+                    <li data-filter="computer">Achievements</li>
+                    <li data-filter="computer">Fun & Social Events</li>
+                </ul>
+            </aside>
+    
+            <!-- Right Side: Image Gallery -->
+            <div class="gallery-grid">
+                <div class="gallery-item english"><img src="images/client2.png" alt="English Course" loading="lazy"><div class="text">Text Here</div></div>
+                <div class="gallery-item aviation"><img src="images/client2.png" alt="Aviation Training" loading="lazy"><div class="text">Text Here</div></div>
+                <div class="gallery-item computer"><img src="images/avni draw flower.png" alt="Computer Course" loading="lazy"><div class="text">Text Here</div></div>
+                <div class="gallery-item english"><img src="images/client3.png" alt="English Course" loading="lazy"><div class="text">Text Here</div></div>
+                <div class="gallery-item aviation"><img src="images/client4.png" alt="Aviation Training" loading="lazy"><div class="text">Text Here</div></div>
+                <div class="gallery-item computer"><img src="images/Sids.jpg" alt="Computer Course" loading="lazy"><div class="text">Text Here</div></div>
+                <div class="gallery-item english"><img src="images/client2.png" alt="English Course" loading="lazy"><div class="text">Text Here</div></div>
+                <div class="gallery-item aviation"><img src="images/client2.png" alt="Aviation Training" loading="lazy"><div class="text">Text Here</div></div>
+                <div class="gallery-item computer"><img src="images/client2.png" alt="Computer Course" loading="lazy"><div class="text">Text Here</div></div>
+                <div class="gallery-item aviation"><img src="images/client4.png" alt="Aviation Training" loading="lazy"><div class="text">Text Here</div></div>
+                <div class="gallery-item computer"><img src="images/Sids.jpg" alt="Computer Course" loading="lazy"><div class="text">Text Here</div></div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Lightbox for Image Preview -->
+    <div class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img src="" class="lightbox-img">
+    </div>
+ 
+    <!-- footer and whatsapp  -->
+    <div id="footer-container"></div>
+    <div id="whatsapp-container"></div>
+
+    <!-- js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

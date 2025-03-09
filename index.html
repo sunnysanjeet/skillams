@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skillam</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="icon" type="image/png" href="images/skillam logo.png">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <!-- Navbar for Mobile-->
+    <nav class="navbar">
+        <div class="logo">Skillam</div>
+        <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="close-menu" onclick="toggleMenu()">'</div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+       
+        <!-- Courses Dropdown -->
+        <div class="expandable" onclick="toggleDropdown('coursesDropdown')">
+            Courses <span>▶</span>
+        </div>
+        <div class="mobile-dropdown" id="coursesDropdown">
+            <a href="english.html">English</a>
+           
+            <!-- Aviation Subcategories -->
+            <div class="expandable" onclick="toggleDropdown('aviationDropdown')">
+                Aviation <span>▶</span>
+            </div>
+            <div class="mobile-dropdown" id="aviationDropdown">
+                <a href="aviation.html#cabin">Cabin Crew</a>
+                <a href="aviation.html#ground">Ground Staff</a>
+                <a href="aviation.html#aocs">AO Course</a>
+            </div>
+           
+            <!-- Computer Subcategories -->
+            <div class="expandable" onclick="toggleDropdown('computerDropdown')">
+                Computer <span>▶</span>
+            </div>
+            <div class="mobile-dropdown" id="computerDropdown">
+                <a href="computer.html#basic">Basic Computer</a>
+                <a href="computer.html#advanced">Advanced Computer</a>
+            </div>
+
+            <!-- CAD Course Subcategories -->
+            <div class="expandable" onclick="toggleDropdown('cadDropdown')">
+                CAD Course <span>▶</span>
+            </div>
+            <div class="mobile-dropdown" id="cadDropdown">
+                <a href="#">1 Course</a>
+                <a href="#">2 Course</a>
+                <a href="#">3 Course</a>
+                <a href="#">4 Course</a>
+            </div>
+        </div>
+
+        <a href="gallery.html">Gallery</a>
+        <a href="#contact">Contact Us</a>
+        <a href="tel:+919876543210" class="phone-btn">📞 +91 98765 43210</a>
+    </div>
+
+    <!-- Navbar for Desktop -->
+    <nav class="navbard">
+        <div class="logod">Skillam</div>
+        <ul class="nav-linksd" id="nav-linksd">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdownd">
+                <a href="#">Courses ▼</a>
+                <ul class="dropdown-menud">
+                    <li><a href="english.html">English Language</a></li>
+                    <li class="dropdownd">
+                        <a href="#">Aviation Training ▶</a>
+                        <ul class="dropdown-menud">
+                            <li><a href="aviation.html#cabin">Cabin Crew Training</a></li>
+                            <li><a href="aviation.html#ground">Ground Staff Training</a></li>
+                            <li><a href="aviation.html#aocs">AO/CS Training</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdownd">
+                        <a href="#">Computer Training ▶</a>
+                        <ul class="dropdown-menud">
+                            <li><a href="computer.html#basic">Basic Computer</a></li>
+                            <li><a href="computer.html#advanced">Advance Computer</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdownd">
+                        <a href="#">CAD Course ▶</a>
+                        <ul class="dropdown-menud">
+                            <li><a href="#">1st Course</a></li>
+                            <li><a href="#">2nd Course</a></li>
+                            <li><a href="#">3rd Course</a></li>
+                            <li><a href="#">4th Course</a></li>
+                            <li><a href="#">5th Course</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- hero section  -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Master English with Confidence at <span>Skillam!</span></h1>
+            <p>Join our expert-led courses and improve your English fluency today.</p>
+            <div class="hero-buttons">
+                <a href="#course" class="btn1 primary-btn1">Explore Courses</a>
+                <a href="#contact" class="btn1 secondary-btn">CONTACT US</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/dark blue.png" alt="Learn English at Skillam">
+        </div>
+    </section>
+
+    <!-- about section  -->
+    <section class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>About <span>Skillam</span></h2>
+                <p>
+                    At Skillam, we empower students with expert-led English courses designed to enhance fluency, confidence, and communication skills.
+                    Our interactive learning methods, experienced trainers, and structured curriculum ensure your success.
+                </p>
+                <ul class="about-features">
+                    <li>✔ Interactive Learning Experience</li>
+                    <li>✔ Expert & Certified Trainers</li>
+                    <li>✔ Personalized Coaching</li>
+                    <li>✔ Practical & Real-Life Communication Skills</li>
+                </ul>
+                <a href="about.html" class="btn2 primary-btn">Know More</a>
+            </div>
+            <div class="about-image">
+                <img src="images/black.png" alt="About Skillam - English Institute">
+            </div>
+        </div>
+    </section>
+
+    <!-- courses section  -->
+    <section id="course" class="courses">
+        <div class="container">
+            <h2 class="section-title1">Our <span>Courses</span></h2>
+            <p class="section-subtitle1">Enhance your skills with our expert-led training programs.</p>
+    
+            <div class="courses-grid">
+                <!-- English Language Course -->
+                <div class="course-card">
+                    <img src="images/light blue.png" alt="English Language Course">
+                    <h3>English Language</h3>
+                    <p>Master English communication skills with expert-led training.</p>
+                    <a href="english.html" class="btn">Read More</a>
+                </div>
+    
+                <!-- Aviation Training Course -->
+                <div class="course-card">
+                    <img src="images/light blue.png" alt="Aviation Training">
+                    <h3>Aviation Training</h3>
+                    <p>Build a strong career in aviation with our specialized courses.</p>
+                    <a href="aviation.html" class="btn">Read More</a>
+                </div>
+    
+                <!-- Computer Training Course -->
+                <div class="course-card">
+                    <img src="images/light blue.png" alt="Computer Training">
+                    <h3>Computer Training</h3>
+                    <p>Learn essential computer skills for a competitive edge.</p>
+                    <a href="computer.html" class="btn">Read More</a>
+                </div>
+    
+                <!-- CAD Course -->
+                <div class="course-card">
+                    <img src="images/light blue.png" alt="CAD Course">
+                    <h3>CAD Course</h3>
+                    <p>Become a CAD expert with practical, hands-on training.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonials section  -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title2">What Our <span>Students Say</span></h2>
+            <p class="section-subtitle3">Real experiences from our learners.</p>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <img src="images/client1.png" alt="Student 1" class="student-photo">
+                        <h3>Rahul Sharma</h3>
+                        <p class="course">English Language Course</p>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-message">"Skillam helped me improve my English skills. The trainers are excellent!"</p>
+                    </div>
+                </div>
+    
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <img src="images/client2.png" alt="Student 2" class="student-photo">
+                        <h3>Priya Verma</h3>
+                        <p class="course">Aviation Training</p>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-message">"The aviation training at Skillam is world-class. Highly recommend it!"</p>
+                    </div>
+                </div>
+    
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <img src="images/client3.png" alt="Student 3" class="student-photo">
+                        <h3>Arjun Singh</h3>
+                        <p class="course">Computer Training</p>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                        <p class="testimonial-message">"I gained hands-on experience in computers. Very happy with the training!"</p>
+                    </div>
+                </div>
+    
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <img src="images/client4.png" alt="Student 4" class="student-photo">
+                        <h3>Anjali Gupta</h3>
+                        <p class="course">CAD Course</p>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-message">"The CAD course is well-structured and practical. Great learning environment!"</p>
+                    </div>
+                </div>
+    
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <img src="images/Sids.jpg" alt="Student 5" class="student-photo">
+                        <h3>Siddharth Singh</h3>
+                        <p class="course">English Language Course</p>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                        <p class="testimonial-message">"My confidence in speaking English has improved a lot. Thanks to Skillam!"</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+            <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- faq section  -->
+    <section id="faqs" class="faqs-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Find answers to common questions about Skillam courses & programs.</p>
+    
+            <div class="faq-container">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">What courses does Skillam offer for English learning?</button>
+                    <div class="faq-answer">
+                        <p>Skillam provides Spoken English, Business English, IELTS Preparation, and Personality Development courses.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">How long does it take to become fluent in English?</button>
+                    <div class="faq-answer">
+                        <p>It depends on your current level, but with regular practice and our structured courses, you can see improvement within 3-6 months.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">Do you offer online classes as well?</button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer both online and offline classes, making it easy for students to learn from anywhere.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">What teaching methods does Skillam use?</button>
+                    <div class="faq-answer">
+                        <p>We use interactive learning techniques, role-playing, real-life conversations, and personalized coaching to enhance your English skills.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <button class="faq-question">How can I enroll in a course at Skillam?</button>
+                    <div class="faq-answer">
+                        <p>You can visit our institute, call us, or enroll directly through our website.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact  -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch with Us</h2>
+            <p class="section-subtitle">Have any questions? Fill out the form below and we will get back to you soon.</p>
+    
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="course">Select Course</label>
+                            <select id="course" name="course" required>
+                                <option value="">-- Select a Course --</option>
+                                <option value="English Language">English Language</option>
+                                <option value="Aviation Training">Aviation Training</option>
+                                <option value="Computer Training">Computer Training</option>
+                                <option value="CAD Course">CAD Course</option>
+                            </select>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required placeholder="Write your query here..."></textarea>
+                        </div>
+    
+                        <button type="submit" class="submit-btn">Submit Query</button>
+
+                        <div id="success-message" class="success-message">Sent successfully!</div>
+                    </form>
+                </div>
+    
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><strong>Address:</strong> 123 Skillam Institute, New Delhi, India</p>
+                    <p><strong>Email:</strong> contact@skillam.com</p>
+                    <p><strong>Phone:</strong> +91 98765 43210</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+               
+                <!-- Footer Logo & About -->
+                <div class="footer-about">
+                    <img src="images/skillam logo.png" alt="Skillam Logo" class="footer-logo">
+                    <p>Your trusted English learning institute for a brighter future.</p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Our Courses -->
+                <div class="footer-courses">
+                    <h3>Our Courses</h3>
+                    <ul>
+                        <li><a href="english.html">English Language</a></li>
+                        <li><a href="aviation.html">Aviation Training</a></li>
+                        <li><a href="computer.html">Computer Training</a></li>
+                        <li><a href="#">CAD Course</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><strong>Address:</strong> 123 Skillam Institute, New Delhi, India</p>
+                    <p><strong>Email:</strong> contact@skillam.com</p>
+                    <p><strong>Phone:</strong> +91 98765 43210</p>
+                </div>
+    
+            </div>
+    
+            <!-- Social Media & Copyright -->
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                </div>
+                <p>© 2025 Skillam. All rights reserved.</p>
+                <p>Developed by <a href="https://www.siddharthsingh10x.com" class="siddharth-link">Siddharth Singh</a></p>
+            </div>
+    
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919876543210" class="whatsapp-button" target="_blank">
+        <img src="images/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <!-- js  -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
